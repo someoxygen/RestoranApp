@@ -36,7 +36,6 @@ namespace RestoranUygulamasi.Controllers
             int unitPrice = objRestoranDBEntities.Item.Single(model => model.ItemId == itemId).ItemPrice;
             return Json(unitPrice, JsonRequestBehavior.AllowGet);
         }
-
         [HttpPost]
         public JsonResult Index(OrderViewModel objOrderViewModel)
         {
@@ -46,8 +45,5 @@ namespace RestoranUygulamasi.Controllers
 
             return Json("Your transaction has been completed successfully.", JsonRequestBehavior.AllowGet);
         } 
-
-
-
     }
 }
