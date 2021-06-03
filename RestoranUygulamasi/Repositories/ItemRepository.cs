@@ -27,6 +27,8 @@ namespace RestoranUygulamasi.Repositories
                                       Selected = false
                                   }).ToList();
 
+
+
             return objSelectListItems;
         }
     }
